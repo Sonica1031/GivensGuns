@@ -1,5 +1,4 @@
 import React from "react";
-import BackgroundHome from "./images/BackgroundHome.png"
 import BrickWall from "./images/BrickWall.jpeg"
 function Home(props){
     const router = event => {
