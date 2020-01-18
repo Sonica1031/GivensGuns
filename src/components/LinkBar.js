@@ -7,37 +7,37 @@ function LinkBar (){
         <div className="Nav">
 <div className="NavBar">
 <Link exact to="/">
-    Home
+    <b>Home</b>
 </Link>
 </div>
 <div className="NavBar">
 <Link exact to="/Guns">
-    Guns
+    <b>Guns</b>
 </Link>
 </div>
 <div className="NavBar">
 <Link exact to="/UsedGuns">
-    Used Guns
+    <b>Used Guns</b>
 </Link>
 </div>
 <div className="NavBar">
 <Link exact to="/Ammo">
-    Ammo
+    <b>Ammo</b>
 </Link>
 </div>
 <div className="NavBar">
 <Link exact to="/Accessories">
-    Accessories
+    <b>Accessories</b>
 </Link>
 </div>
 <div className="NavBar">
 <Link exact to="/Sales">
-    Sales
+    <b>Sales</b>
 </Link>
 </div>
 <div className="NavBar">
 <Link exact to="/ContactUs">
-    Contact Us
+    <b>Contact Us</b>
 </Link>
 </div>
 

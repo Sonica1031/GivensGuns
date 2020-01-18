@@ -1,13 +1,15 @@
 import React from "react";
 import BackgroundHome from "./images/BackgroundHome.png"
+import BrickWall from "./images/BrickWall.jpeg"
 function Home(){
     const router = event => {
         event.preventDefault();
+
       };
 
     return(
-    <div>
-        <img src={BackgroundHome} width="100%" position="absolute" z-index="-1"/>
+    <div className="Flex-Zone">
+        <img src={BrickWall} width="100%" height="auto" position="absolute" z-index="-999"/>
         <button className="btn" onClick={router}>
         Shop now!
        </button>
