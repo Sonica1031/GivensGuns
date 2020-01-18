@@ -14,9 +14,9 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1 className="App-top">
-          Givens' Guns
-        </h1>
+        <background-layer>
+          <h1 className="App-top">Givens' Guns</h1>
+        </background-layer>
         <LinkBar />
       </header>
       <div>
