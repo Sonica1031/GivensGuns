@@ -8,7 +8,7 @@ function Guns(){
         .get(`https://www.apexdata.gg/api/bghoPrWQMb5RgkPPACBD0wtt/weapons/pistols.json`)
         .then(res =>{
             console.log(res);
-            setGunList(res);
+            setGunList(res.data);
         })
         .catch(err =>{
             console.log(err);
@@ -20,6 +20,7 @@ return(
         <h1>Guns</h1>
     <div className="wrapped">
         <div>
+            {gunList.map(x=> <h2>{x.name}</h2>)}
         </div>
     </div>
     </div>
