@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <header>
-          <img src={BackgroundHeader} width="100%" height="200px" opacity="70%" />
+          <img src={BackgroundHeader} width="100%" height="200px" opacity="30%" />
           <h1 className="App-top">Givens' Guns</h1>
         <LinkBar />
       </header>
