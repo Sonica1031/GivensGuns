@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
+import pistol from "./images/pistol.jpeg"
 
 function Guns(){
     const [gunList, setGunList] = useState([]);
@@ -20,7 +21,7 @@ return(
         <h1>Guns</h1>
     <div className="wrapped">
         <div>
-            {gunList.map(x=> <h2>{x.name}</h2>)}
+            {gunList.map(x=> <div className="Card"><img src={pistol} width="250" /><div className="DescriptionsOnTop"><p>{x.name}</p><p>Ammo Capacity : {x.ammo_capacity}</p></div></div>)}
         </div>
     </div>
     </div>

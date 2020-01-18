@@ -8,8 +8,6 @@ import Ammo from './components/Ammo';
 import Accessories from './components/Accessories';
 import Sales from './components/Sales';
 import ContactUs from './components/ContactUs';
-import axios from "axios";
-
 import './App.css';
 
 function App() {

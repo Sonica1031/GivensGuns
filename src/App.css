@@ -98,3 +98,16 @@ p{
   max-width: 1200px;
   flex-wrap: wrap;
 }
+.Card{
+  display: flex;
+  border: black 2px solid;
+  background: white;
+  margin: 10px;
+  border-radius: 3%;
+
+}
+
+.DescriptionsOnTop{
+  display:flex;
+  flex-direction: column;
+}
