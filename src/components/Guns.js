@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 import axios from "axios";
 import pistol from "./images/pistol.jpeg"
 
@@ -20,6 +21,9 @@ return(
     <div>
         <h1>Guns</h1>
     <div className="wrapped">
+        <Link to="/Pistols">Pistols</Link>
+        <Link to="/Rifles">Rifles</Link>
+        <Link to="/All">All</Link>
         <div>
             {gunList.map(x=> <div className="Card"><img src={pistol} width="250" /><div className="DescriptionsOnTop"><p>{x.name}</p><p>Ammo Capacity : {x.ammo_capacity}</p></div></div>)}
         </div>

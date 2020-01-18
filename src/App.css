@@ -115,3 +115,13 @@ p{
 header{
   position: relative;
 }
+
+.btn{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vw;
+  max-width: 100vw;
+  text-align: center;
+}
