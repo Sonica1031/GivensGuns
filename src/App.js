@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1 className="App-header">
+        <h1 className="App-top">
           Givens' Guns
         </h1>
         <LinkBar />
