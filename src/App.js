@@ -8,15 +8,15 @@ import Ammo from './components/Ammo';
 import Accessories from './components/Accessories';
 import Sales from './components/Sales';
 import ContactUs from './components/ContactUs';
+import BackgroundHeader from './components/images/BackgroundHeader.png'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header>
-        <background-layer>
+          <img src={BackgroundHeader} width="100%" height="200px" opacity="70%" />
           <h1 className="App-top">Givens' Guns</h1>
-        </background-layer>
         <LinkBar />
       </header>
       <div>
