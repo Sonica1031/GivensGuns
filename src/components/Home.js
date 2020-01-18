@@ -1,10 +1,10 @@
 import React from "react";
 import BackgroundHome from "./images/BackgroundHome.png"
 import BrickWall from "./images/BrickWall.jpeg"
-function Home(){
+function Home(props){
     const router = event => {
         event.preventDefault();
-
+        props.history.push("/Sales")
       };
 
     return(
