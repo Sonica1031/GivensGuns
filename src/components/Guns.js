@@ -1,32 +1,24 @@
-import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
-import axios from "axios";
-import pistol from "./images/pistol.jpeg"
+import React from "react";
+import {NavLink, Route} from "react-router-dom";
+import Pistols from "./Pistols";
+import Pistol from "../data";
 
-function Guns(){
-    const [gunList, setGunList] = useState([]);
-    useEffect(()=>{
-        axios
-        .get(`https://www.apexdata.gg/api/bghoPrWQMb5RgkPPACBD0wtt/weapons/pistols.json`)
-        .then(res =>{
-            console.log(res);
-            setGunList(res.data);
-        })
-        .catch(err =>{
-            console.log(err);
-        });
-        }, [])
+function Guns(props){
+
 
 return(
     <div>
         <h1>Guns</h1>
     <div className="wrapped">
-        <Link to="/Pistols">Pistols</Link>
-        <Link to="/Rifles">Rifles</Link>
-        <Link to="/All">All</Link>
-        <div>
-            {gunList.map(x=> <div className="Card"><img src={pistol} width="250" /><div className="DescriptionsOnTop"><p>{x.name}</p><p>Ammo Capacity : {x.ammo_capacity}</p></div></div>)}
-        </div>
+        <nav>
+        <NavLink to="/Guns/Pistols">Pistols</NavLink>
+        <NavLink to="/Rifles">Rifles</NavLink>
+        <NavLink to="/All">All</NavLink>
+        </nav>
+
+        <Route exact path="/Pistols/:ID?"
+        render={props => <Pistols GunInfo={Pistol} {...props} items={Guns}/>} 
+       />
     </div>
     </div>
     
