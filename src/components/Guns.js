@@ -1,24 +1,16 @@
-import React from "react";
-import {NavLink, Route} from "react-router-dom";
+import React, {useState} from "react";
+import {Link} from "react-router-dom";
 import Pistols from "./Pistols";
-import Pistol from "../data";
 
 function Guns(props){
-
-
 return(
     <div>
         <h1>Guns</h1>
     <div className="wrapped">
-        <nav>
-        <NavLink to="/Guns/Pistols">Pistols</NavLink>
-        <NavLink to="/Rifles">Rifles</NavLink>
-        <NavLink to="/All">All</NavLink>
-        </nav>
-
-        <Route exact path="/Pistols/:ID?"
-        render={props => <Pistols GunInfo={Pistol} {...props} items={Guns}/>} 
-       />
+        <Link to="/Guns/Pistols">Pistols</Link>
+        <Link to="/Rifles">Rifles</Link>
+        <Link to="/All">All</Link>
+        <Pistols />
     </div>
     </div>
     

@@ -8,6 +8,7 @@ import Ammo from './components/Ammo';
 import Accessories from './components/Accessories';
 import Sales from './components/Sales';
 import ContactUs from './components/ContactUs';
+import Pistols from './components/Pistols';
 import BackgroundHeader from './components/images/BackgroundHeader.png'
 import './App.css';
 
@@ -27,6 +28,9 @@ function App() {
 <Route exact path="/Accessories" component={Accessories} />
 <Route exact path="/Sales" component={Sales} />
 <Route exact path="/ContactUs" component={ContactUs} />
+<Route path= "/Pistols" component={Pistols}></Route>
+<Route path="/Guns/Pistols/:ID"
+render={props => <Pistols {...props} key={this.props.ID} /> }/>
       </div>
     </div>
   );
