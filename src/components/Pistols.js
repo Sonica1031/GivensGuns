@@ -7,7 +7,7 @@ function Pistols (){
     return (
         <div>
             {Pistol.map(x =>(
-            <PistolList key={Pistol.ID} x={Pistol} />
+            <PistolList key={Pistol.ID} props={x} />
             ))}
         </div>
     );
