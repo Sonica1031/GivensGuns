@@ -6,16 +6,18 @@ import Pistol from '../data';
 
 function PistolList(props) {
 
+    const gun = Pistol.find(gun1 => `${gun1.ID}` === props.match.params.ID);
+
 return (
 <div className="InnerCard">
-<p>  Name: {props.Name} </p>
-<p>  Barrel Size: {props.BarrelSize}  </p>
-<p>  Gun Length: {props.GunLength}  </p>
-<p>  Material of Frame: {props.Frame}  </p>
-<p>  Unloaded Weight: {props.UnloadedWeight}  </p>
-<p>  Magazine Size(s): {props.MagazineSize}  </p>
-<p>  Type(s) of Ammo: {props.Ammo}  </p>
-<p>  Trigger Pull Weight: {props.TriggerPull}  </p>
+<p>  Name: {gun.Name} </p>
+<p>  Barrel Size: {gun.BarrelSize}  </p>
+<p>  Gun Length: {gun.GunLength}  </p>
+<p>  Material of Frame: {gun.Frame}  </p>
+<p>  Unloaded Weight: {gun.UnloadedWeight}  </p>
+<p>  Magazine Size(s): {gun.MagazineSize}  </p>
+<p>  Type(s) of Ammo: {gun.Ammo}  </p>
+<p>  Trigger Pull Weight: {gun.TriggerPull}  </p>
 <img src= {pistolImage} alt="random stock image" width="250px"/>
 </div>
 )
