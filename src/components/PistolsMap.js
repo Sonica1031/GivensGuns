@@ -13,7 +13,7 @@ function PistolMap (){
                 return(
                 <div>
             <Link to={`/Guns/Pistols/${x.ID}`}>
-             <PistolList props={x}/>
+             <PistolList Name={x.Name} BarrelSize={x.BarrelSize} GunLength={x.GunLength} Frame={x.Frame} UnloadedWeight={x.UnloadedWeight} MagazineSize={x.MagazineSize} Ammo={x.Ammo} TriggerPull={x.TriggerPull}/>
                 </Link>
             </div>
             
