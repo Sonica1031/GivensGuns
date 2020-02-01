@@ -137,3 +137,11 @@ header{
   align-items: center;
   width: 100%;
 }
+
+.SecondCard{
+  background-color: white;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  border: 
+}

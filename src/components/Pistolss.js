@@ -3,12 +3,8 @@ import pistolImage from "./images/pistol.jpeg";
 import { Link, useParams } from "react-router-dom";
 import Pistol from "../data";
 
-function PistolList(props) {
-  const [gun, setGun] = useState({});
-
-  useEffect(() => {
-    setGun(() => Pistol.find(gun1 => gun1.ID == props.match.params.id));
-  }, [gun]);
+function Pistolss(props) {
+  const { gun } = props;
 
   return (
     <div className="SecondCard">
@@ -22,9 +18,9 @@ function PistolList(props) {
       <p> Type(s) of Ammo: {gun.Ammo} </p>
       <p> Trigger Pull Weight: {gun.TriggerPull} </p>
       <img src={pistolImage} alt="random stock image" width="250px" />
-    </div>
+      </div>
     </div>
   );
 }
 
-export default PistolList;
+export default Pistolss;
