@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import Pistols from "./Pistols";
+import PistolsMap from "./PistolsMap";
 
 function Guns(props){
 return(
@@ -10,7 +10,7 @@ return(
         <Link to="/Guns/Pistols">Pistols</Link>
         <Link to="/Rifles">Rifles</Link>
         <Link to="/All">All</Link>
-        <Pistols />
+        <PistolsMap />
     </div>
     </div>
     

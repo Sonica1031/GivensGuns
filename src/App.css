@@ -101,11 +101,16 @@ p{
 }
 .Card{
   display: flex;
-  border: black 2px solid;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: left;
+  align-items: center;
   background: white;
   margin: 10px;
-  border-radius: 4%;
 
+}
+.InnerCard{
+  width: 300px;
 }
 
 .DescriptionsOnTop{

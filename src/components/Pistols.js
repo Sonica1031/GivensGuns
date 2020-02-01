@@ -1,16 +1,10 @@
 import React from "react";
-import {Pistol} from '../data';
-import PistolList from './PistolList';
+import PistolsMap from "./PistolsMap"
 
-function Pistols (){
+function Pistols(){
 
-    return (
-        <div>
-            {Pistol.map(x =>(
-            <PistolList key={Pistol.ID} props={x} />
-            ))}
-        </div>
-    );
+    return(
+        <PistolsMap />
+    )
 }
-
 export default Pistols;

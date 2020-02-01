@@ -8,9 +8,12 @@ import Ammo from './components/Ammo';
 import Accessories from './components/Accessories';
 import Sales from './components/Sales';
 import ContactUs from './components/ContactUs';
+import Pistol from './data';
 import Pistols from './components/Pistols';
+import PistolMap from './components/PistolsMap';
 import BackgroundHeader from './components/images/BackgroundHeader.png'
 import './App.css';
+import data from './data';
 
 function App() {
   return (
@@ -28,9 +31,8 @@ function App() {
 <Route exact path="/Accessories" component={Accessories} />
 <Route exact path="/Sales" component={Sales} />
 <Route exact path="/ContactUs" component={ContactUs} />
-<Route path= "/Pistols" component={Pistols}></Route>
-<Route path="/Guns/Pistols/:ID"
-render={props => <Pistols {...props} key={this.props.ID} /> }/>
+<Route path= "/Guns/Pistols" component={Pistols}/>
+<Route path={`/Guns/Pistols/:ID`} component={PistolMap} />
       </div>
     </div>
   );
