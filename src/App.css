@@ -85,6 +85,7 @@ a{
   text-decoration: none;
   font-size: 5rem;
   color: black;
+  padding: 10px;
 }
 h1{
   font-size: 5rem;
@@ -140,8 +141,8 @@ header{
 
 .SecondCard{
   background-color: white;
+  padding: 10 px;
   width: 400px;
   display: flex;
   justify-content: center;
-  border: 
 }

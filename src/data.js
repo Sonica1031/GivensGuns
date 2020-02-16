@@ -1,8 +1,7 @@
-import React from "react";
-
-const Pistol = [
+export const data = [
 {
     ID: 1,
+    Type: "Pistol",
     Name: "Glock 19",
     BarrelSize: "4.01 inch",
     GunLength: "7.36 inch",
@@ -15,6 +14,7 @@ const Pistol = [
 },
 {
     ID: 2,
+    Type: "Pistol",
     Name: "The CZ 75B",
     BarrelSize: "4.7 inch",
     GunLength: "8.12 inch",
@@ -27,6 +27,7 @@ const Pistol = [
 },
 {
     ID: 3,
+    Type: "Pistol",
     Name: "The S & W Shield",
     BarrelSize: "5.25 inch",
     GunLength: " inch",
@@ -39,6 +40,7 @@ const Pistol = [
 },
 {
     ID: 4,
+    Type: "Pistol",
     Name: "Springfield XD(M) Competition Series",
     BarrelSize: "3.1 inch",
     GunLength: "6.75 inch",
@@ -51,6 +53,7 @@ const Pistol = [
 },
 {
     ID: 5,
+    Type: "Pistol",
     Name: "Glock 19",
     BarrelSize: "4.01 inch",
     GunLength: "7.36 inch",
@@ -63,6 +66,7 @@ const Pistol = [
 },
 {       
     ID: 6,
+    Type: "Pistol",
     Name: "The CZ 75B",
     BarrelSize: "4.7 inch",
     GunLength: "8.12 inch",
@@ -75,6 +79,7 @@ const Pistol = [
 },
 {
     ID: 7,
+    Type: "Pistol",
     Name: "The S & W Shield",
     BarrelSize: "5.25 inch",
     GunLength: " inch",
@@ -87,6 +92,7 @@ const Pistol = [
 },
 {
     ID: 8,
+    Type: "Pistol",
     Name: "Springfield XD(M) Competition Series",
     BarrelSize: "3.1 inch",
     GunLength: "6.75 inch",
@@ -100,6 +106,7 @@ const Pistol = [
 {
 
     ID: 9,
+    Type: "Pistol",
     Name: "Glock 19",
     BarrelSize: "4.01 inch",
     GunLength: "7.36 inch",
@@ -112,6 +119,7 @@ const Pistol = [
 },
 {
     ID: 10,
+    Type: "Pistol",
     Name: "The CZ 75B",
     BarrelSize: "4.7 inch",
     GunLength: "8.12 inch",
@@ -124,6 +132,7 @@ const Pistol = [
 },
 {
     ID: 11,
+    Type: "Pistol",
     Name: "The S & W Shield",
     BarrelSize: "5.25 inch",
     GunLength: " inch",
@@ -136,6 +145,7 @@ const Pistol = [
 },
 {
     ID: 12,
+    Type: "Pistol",
     Name: "Springfield XD(M) Competition Series",
     BarrelSize: "3.1 inch",
     GunLength: "6.75 inch",
@@ -148,6 +158,7 @@ const Pistol = [
 },
 {
     ID: 14,
+    Type: "Pistol",
     Name: "Glock 19",
     BarrelSize: "4.01 inch",
     GunLength: "7.36 inch",
@@ -160,6 +171,7 @@ const Pistol = [
 },
 {
     ID: 15,
+    Type: "Pistol",
     Name: "The CZ 75B",
     BarrelSize: "4.7 inch",
     GunLength: "8.12 inch",
@@ -172,6 +184,7 @@ const Pistol = [
 },
 {
     ID: 16,
+    Type: "Pistol",
     Name: "The S & W Shield",
     BarrelSize: "5.25 inch",
     GunLength: " inch",
@@ -184,6 +197,7 @@ const Pistol = [
 },
 {
     ID: 17,
+    Type: "Pistol",
     Name: "Springfield XD(M) Competition Series",
     BarrelSize: "3.1 inch",
     GunLength: "6.75 inch",
@@ -195,4 +209,3 @@ const Pistol = [
     Img: ""
 }
 ]
-export default Pistol;

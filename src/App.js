@@ -8,13 +8,11 @@ import Ammo from "./components/Ammo";
 import Accessories from "./components/Accessories";
 import Sales from "./components/Sales";
 import ContactUs from "./components/ContactUs";
-import Pistol from "./data";
-import Pistols from "./components/Pistols";
-import PistolMap from "./components/PistolsMap";
+import Pistol from "./components/Pistols/Pistol";
+import PistolList from "./components/Pistols/PistolList"
 import BackgroundHeader from "./components/images/BackgroundHeader.png";
-import PistolList from "./components/PistolList";
+import GunPistol from './components/Pistols/GunPistol';
 import "./App.css";
-import data from "./data";
 
 function App() {
   return (
@@ -26,14 +24,18 @@ function App() {
       </header>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/Guns" component={Guns} />
-        <Route exact path="/UsedGuns" component={UsedGuns} />
-        <Route exact path="/Ammo" component={Ammo} />
-        <Route exact path="/Accessories" component={Accessories} />
-        <Route exact path="/Sales" component={Sales} />
-        <Route exact path="/ContactUs" component={ContactUs} />
-        <Route exact path="/Guns/Pistols" component={PistolMap} />
-        <Route exact path="/Guns/Pistols/:id" component={PistolList} />
+        <Route path="/Guns" component={Guns} />
+        <Route path="/UsedGuns" component={UsedGuns} />
+        <Route path="/Ammo" component={Ammo} />
+        <Route path="/Accessories" component={Accessories} />
+        <Route path="/Sales" component={Sales} />
+        <Route path="/ContactUs" component={ContactUs} />
+        <Route path="/Guns/Pistols" component={Pistol} />
+        <Route
+        path="/Guns/Pistols/:id"
+        render={props =>{
+         return <PistolList {...props} GunPistol = {GunPistol} />
+        }} />
       </Switch>
     </div>
   );
